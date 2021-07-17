@@ -41,7 +41,7 @@ def game_start_question1():
     # The start of the game and the first question about the height of the person
     # if the user put wrong number, out of range or a str as the answer, this function redirects to value_error_numbers
     print("Okay, let's start!")
-    print("Please choose (a number) which of these suits you best: ")
+    print("Please choose (a number) which of those suits you best: ")
     try:
         height = int(input("I am: \n1.Tall \n2.Average height \n3.Small\n"))
         if height == 1 or height == 2 or height == 3:
@@ -55,9 +55,29 @@ def game_start_question1():
 def question2():
     print("Which quality suits you personality better? (choose one number only): ")
     try:
-        personality = int(input("1.Tough\n2.Easygoing\n3.Both, depends on situation."))
+        personality = int(input("1.Tough\n2.Easygoing\n3.Both, depends on situation.\n"))
         personality_choices.append(personality)
-        print(personality)
+        question3()
+    except ValueError:
+        value_error_numbers()
+
+
+def question3():
+    print("Which season is you favorite? (choose one number only):\n")
+    try:
+        weather_choice = int(input("1.Winter\n2.Spring\n3.Summer\n4.Autumn\n"))
+        personality_choices.append(weather_choice)
+        question4()
+    except ValueError:
+        value_error_numbers()
+
+
+def question4():
+    print("What is the length of your hair? (choose one number):\n")
+    try:
+        haircut = int(input("1.Bold\n2.Short hair\n3.Shoulder-length\n4.Long\n"))
+        personality_choices.append(haircut)
+        print(personality_choices)
     except ValueError:
         value_error_numbers()
 
