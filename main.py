@@ -43,7 +43,7 @@ def game_start_question1():
     print("Okay, let's start!")
     print("Please choose (a number) which of those suits you best: ")
     try:
-        height = int(input("I am: \n1.Tall \n2.Average height \n3.Small\n"))
+        height = int(input("I am: \n1.Tall \n2.Average height \n3.Smōl\n"))
         if height == 1 or height == 2 or height == 3:
             personality_choices.append(height)
         else:
