@@ -9,6 +9,13 @@ print("Hi {}! Nice to meet you!".format(name))
 answer = input("This small Python program will show you \nwhat tree you could be according to your features.\nWould "
                "you like to play?\n(print yes/no)\n")
 
+def clean_personality_choices():
+    # cleaning the list with all the personality choices made by the user if she/he decides to start the game from
+    # the beginning. If the list is already clean, the function does nothing
+    if len(personality_choices) == 0:
+        pass
+    else:
+        personality_choices.clear()
 
 def bye():
     # this function will be used if the user doesn't want to play
@@ -42,6 +49,7 @@ def game_start_question1():
     # if the user put wrong number, out of range or a str as the answer, this function redirects to value_error_numbers
     print("Okay, let's start!")
     print("Please choose (a number) which of those suits you best: ")
+    clean_personality_choices()
     try:
         height = int(input("I am: \n1.Tall \n2.Average height \n3.Small\n"))
         if height == 1 or height == 2 or height == 3:
@@ -53,33 +61,46 @@ def game_start_question1():
 
 
 def question2():
+    # asking user about his/her personality and storing the answer in a list with previous answers
+    # the answer should be a number 1-3, if the user input a number out of range/str she will see
+    # an error message and can try to play the game from the beginning
     print("Which quality suits you personality better? (choose one number only): ")
     try:
         personality = int(input("1.Tough\n2.Easygoing\n3.Both, depends on situation.\n"))
-        personality_choices.append(personality)
-        question3()
+        if personality == 1 or personality == 2 or personality == 3:
+            personality_choices.append(personality)
+            question3()
     except ValueError:
         value_error_numbers()
 
 
 def question3():
+    # asking the user about her/his season preferences, storing the answer(number) in the list with other answers
     print("Which season is you favorite? (choose one number only):\n")
     try:
         weather_choice = int(input("1.Winter\n2.Spring\n3.Summer\n4.Autumn\n"))
-        personality_choices.append(weather_choice)
-        question4()
+        if weather_choice == 1 or weather_choice == 2 or weather_choice == 3 or weather_choice == 4:
+            personality_choices.append(weather_choice)
+            question4()
     except ValueError:
         value_error_numbers()
 
 
 def question4():
+    # asking the user about his/her haircut and storing the answer in a list with previous answers
     print("What is the length of your hair? (choose one number):\n")
     try:
         haircut = int(input("1.Bold\n2.Short hair\n3.Shoulder-length\n4.Long\n"))
-        personality_choices.append(haircut)
-        print(personality_choices)
+        if haircut == 1 or haircut == 2 or haircut == 3 or haircut == 4:
+            personality_choices.append(haircut)
+            analyzing_answers()
     except ValueError:
         value_error_numbers()
+
+
+def analyzing_answers():
+    # showing the pictures to the user according to his/her answers
+    pass
 
 
 if answer.lower() == "yes":
