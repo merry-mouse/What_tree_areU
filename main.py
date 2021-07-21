@@ -99,8 +99,59 @@ def question4():
 
 
 def analyzing_answers():
-    # showing the pictures to the user according to his/her answers
+    if personality_choices[0] == 1:
+        tall()
+    elif personality_choices[0] == 2:
+        average()
+    elif personality_choices[0] == 3:
+        small()
     pass
+
+def tall():
+    # if the user is tall and tough/both easygoing and tough
+    if personality_choices[1] == 1 or personality_choices[1] == 3:
+        # if she likes winter and she is strong
+        if personality_choices[2] == 1:
+            # if he is bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great oak tree!".format(name))
+                print("You can find some interesting facts about oak trees at this webpage:\n"
+                      "https://www.thefactsite.com/oak-tree-facts/")
+                oak_image = Image.open('oak_tree.png')
+                oak_image.show()
+            # or if she has short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful and strong Siberian Pine (Cedar)!".format(name))
+                print("You can find some interesting facts about Siberian Pine Tree at this webpage:\n"
+                      "https://www.goldenoils.co.uk/amazing-facts-about-siberian-pine-tree/")
+                siberian_pine = Image.open('siberian_pine.jpg')
+                siberian_pine.show()
+            # or if he has shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful and strong Birch!".format(name))
+                print("You can find some interesting facts about Birch Tree at this webpage:\n"
+                      "http://justfunfacts.com/interesting-facts-about-birch-trees/")
+                birch_tree = Image.open('birch.jpg')
+                birch_tree.show()
+            # or if she has long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Willow!".format(name))
+                print("You can find some interesting facts about Willow at this webpage:\n"
+                      "https://garden.lovetoknow.com/wiki/Weeping_Willow_Tree_Facts")
+                willow = Image.open('willow.jpg')
+                willow.show()
+
+
+def average():
+    pass
+
+
+def small():
+    pass
+
+
+
+
 
 
 if answer.lower() == "yes":
