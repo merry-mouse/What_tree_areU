@@ -9,6 +9,7 @@ print("Hi {}! Nice to meet you!".format(name))
 answer = input("This small Python program will show you \nwhat tree you could be according to your features.\nWould "
                "you like to play?\n(print yes/no)\n")
 
+
 def clean_personality_choices():
     # cleaning the list with all the personality choices made by the user if she/he decides to start the game from
     # the beginning. If the list is already clean, the function does nothing
@@ -16,6 +17,7 @@ def clean_personality_choices():
         pass
     else:
         personality_choices.clear()
+
 
 def bye():
     # this function will be used if the user doesn't want to play
@@ -140,7 +142,7 @@ def tall():
                       "https://garden.lovetoknow.com/wiki/Weeping_Willow_Tree_Facts")
                 willow = Image.open('willow.jpg')
                 willow.show()
-        # if likes spring
+        # if likes SPRING
         elif personality_choices[2] == 2:
             # if bold
             if personality_choices[3] == 1:
@@ -170,6 +172,36 @@ def tall():
                       "https://en.wikipedia.org/wiki/Cupressus_cashmeriana")
                 cacshmeriana = Image.open('Cupressus.jpg')
                 cacshmeriana.show()
+        # if likes SUMMER
+        elif personality_choices[2] == 3:
+            # if bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Giant Red Cedar!".format(name))
+                print("You can find some interesting facts about Giant Red Cedar at this webpage:\n"
+                      "https://www.encyclopedia.com/plants-and-animals/plants/plants/red-cedar")
+                GiantRedCedar_image = Image.open('giantRedCedar.jpg')
+                GiantRedCedar_image.show()
+            # if short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful Acacia tree!".format(name))
+                print("You can find some interesting facts about Acacia at this webpage:\n"
+                      "https://www.softschools.com/facts/plants/acacia_facts/1047/#:~:text=Acacia%20usually%20grows%20to%20the,impression%20of%20a%20giant%20fern.")
+                acacia_image = Image.open('acacia.jpg')
+                acacia_image.show()
+            # if shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful and strong Ceiba (Kapok) tree!".format(name))
+                print("You can find some interesting facts about Ceiba Tree at this webpage:\n"
+                      "https://www.rainforest-alliance.org/species/kapok-tree")
+                ceiba_tree = Image.open('ceiba_tree.jpg')
+                ceiba_tree.show()
+            # if long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Cathedral (Curtain) Fig!".format(name))
+                print("You can find some interesting facts about Cathedral Fig at this webpage:\n"
+                      "https://en.wikipedia.org/wiki/Curtain_Fig_Tree")
+                cathedral_tree = Image.open('cathedral_fig.jpg')
+                cathedral_tree.show()
 
 
 
