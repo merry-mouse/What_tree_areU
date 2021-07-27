@@ -102,17 +102,17 @@ def question4():
 
 def analyzing_answers():
     if personality_choices[0] == 1:
-        tall()
+        tall_and_tough_easygoing()
     elif personality_choices[0] == 2:
         average()
     elif personality_choices[0] == 3:
         small()
     pass
 
-def tall():
+def tall_and_tough_easygoing():
     # if the user is tall and tough/both easygoing and tough
     if personality_choices[1] == 1 or personality_choices[1] == 3:
-        # if she likes winter and she is strong
+        # if she likes WINTER
         if personality_choices[2] == 1:
             # if bold
             if personality_choices[3] == 1:
@@ -178,30 +178,60 @@ def tall():
             if personality_choices[3] == 1:
                 print("Dear, {}, you could be a great Giant Red Cedar!".format(name))
                 print("You can find some interesting facts about Giant Red Cedar at this webpage:\n"
-                      "https://www.encyclopedia.com/plants-and-animals/plants/plants/red-cedar")
+                        "https://www.encyclopedia.com/plants-and-animals/plants/plants/red-cedar")
                 GiantRedCedar_image = Image.open('giantRedCedar.jpg')
                 GiantRedCedar_image.show()
             # if short hair
             elif personality_choices[3] == 2:
                 print("{}, your tree is a beautiful Acacia tree!".format(name))
                 print("You can find some interesting facts about Acacia at this webpage:\n"
-                      "https://www.softschools.com/facts/plants/acacia_facts/1047/#:~:text=Acacia%20usually%20grows%20to%20the,impression%20of%20a%20giant%20fern.")
+                        "https://www.softschools.com/facts/plants/acacia_facts/1047/#:~:text=Acacia%20usually%20grows%20to%20the,impression%20of%20a%20giant%20fern.")
                 acacia_image = Image.open('acacia.jpg')
                 acacia_image.show()
             # if shoulder-length hair
             elif personality_choices[3] == 3:
                 print("{}, your tree is a beautiful and strong Ceiba (Kapok) tree!".format(name))
                 print("You can find some interesting facts about Ceiba Tree at this webpage:\n"
-                      "https://www.rainforest-alliance.org/species/kapok-tree")
+                        "https://www.rainforest-alliance.org/species/kapok-tree")
                 ceiba_tree = Image.open('ceiba_tree.jpg')
                 ceiba_tree.show()
             # if long hair
             elif personality_choices[3] == 4:
                 print("{}, your tree is a beautiful and strong Cathedral (Curtain) Fig!".format(name))
                 print("You can find some interesting facts about Cathedral Fig at this webpage:\n"
-                      "https://en.wikipedia.org/wiki/Curtain_Fig_Tree")
+                        "https://en.wikipedia.org/wiki/Curtain_Fig_Tree")
                 cathedral_tree = Image.open('cathedral_fig.jpg')
                 cathedral_tree.show()
+        # if likes AUTUMN
+        elif personality_choices[2] == 4:
+            # if bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Buckeye tree!".format(name))
+                print("You can find some interesting facts about Buckeye at this webpage:\n"
+                        "https://homeguides.sfgate.com/buckeye-tree-40387.html")
+                buckeye_image = Image.open('buckeye.png')
+                buckeye_image.show()
+            # if short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful Black cherry tree!".format(name))
+                print("You can find some interesting facts about Black cherry at this webpage:\n"
+                        "https://the-natural-web.org/2016/06/03/black-cherry-for-wildlife-and-people-too/")
+                black_cherry_image = Image.open('black_cherry.jpg')
+                black_cherry_image.show()
+            # if shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful and strong Sourwood tree!".format(name))
+                print("You can find some interesting facts about Sourwood at this webpage:\n"
+                        "https://www.arborday.org/trees/treeguide/TreeDetail.cfm?ItemID=921")
+                sourwood_tree = Image.open('sourwood.jpg')
+                sourwood_tree.show()
+            # if long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Hornbeam tree!".format(name))
+                print("You can find some interesting facts about Hornbeam at this webpage:\n"
+                        "https://www.britannica.com/plant/hornbeam")
+                hornbeam_tree = Image.open('hornbeam.jpg')
+                hornbeam_tree.show()
 
 
 
