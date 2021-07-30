@@ -392,7 +392,36 @@ def small():
                       "https://en.wikipedia.org/wiki/Juniperus_virginiana")
                 eastern_red_image = Image.open('eastern_red_cedar.jpg')
                 eastern_red_image.show()
-    pass
+        # if likes SPRING
+        elif personality_choices[2] == 2:
+            # if Bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Arrayan tree (Luma apiculata)!".format(name))
+                print("You can find some interesting facts about Arrayan trees at this webpage:\n"
+                      "https://en.wikipedia.org/wiki/Luma_apiculata")
+                arrayan_image = Image.open('arrayan.jpg')
+                arrayan_image.show()
+            # if short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful Brush box (Lophostemon confertus) tree!".format(name))
+                print("You can find some interesting facts about Brush box at this webpage:\n"
+                      "https://en.wikipedia.org/wiki/Lophostemon_confertus")
+                brush_image = Image.open('brush_box.jpg')
+                brush_image.show()
+            # if shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful and strong Alder!".format(name))
+                print("You can find some interesting facts about Alder Tree at this webpage:\n"
+                      "https://treesforlife.org.uk/into-the-forest/trees-plants-animals/trees/alder/alder-facts/")
+                alder_tree = Image.open('alder.jpg')
+                alder_tree.show()
+            # if long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful  Podocarpaceae!".format(name))
+                print("You can find some interesting facts about Podocarpaceae at this webpage:\n"
+                      "https://en.wikipedia.org/wiki/Podocarpaceae")
+                podocarpaceae_image = Image.open('podocarpus_mutadae.jpg')
+                podocarpaceae_image.show()
 
 
 
