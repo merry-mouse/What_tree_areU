@@ -359,7 +359,39 @@ def tall_and_average():
 
 
 def small():
-
+    # if the user is Small and Tough/Both
+    # cause it is always nicer to guess that the person is stronger and tougher =)
+    if personality_choices[1] == 1 or personality_choices[1] == 3:
+        # if she likes WINTER
+        if personality_choices[2] == 1:
+            # if Bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a Goat Willow also known as Pussy Willow!".format(name))
+                print("You can find some interesting facts about Goat Willow at this webpage:\n"
+                      "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/goat-willow/")
+                goat_willow_image = Image.open('goat_willow.jpg')
+                goat_willow_image.show()
+            # if short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful and strong Juniper tree!".format(name))
+                print("You can find some interesting facts about Juniper tree at this webpage:\n"
+                      "https://www.goldenoils.co.uk/amazing-facts-about-siberian-pine-tree/")
+                juniper_image = Image.open('juniper.jpg')
+                juniper_image.show()
+            # if shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful Holy tree!".format(name))
+                print("You can find some interesting facts about Holy Tree at this webpage:\n"
+                      "https://tree2mydoor.com/pages/information-trees-tree-directory-holly-trees")
+                holy_tree = Image.open('holy_tree.jpg')
+                holy_tree.show()
+            # if long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Juniperus virginiana commonly known as Eastern Red Cedar!".format(name))
+                print("You can find some interesting facts about Eastern Red Cedar at this webpage:\n"
+                      "https://en.wikipedia.org/wiki/Juniperus_virginiana")
+                eastern_red_image = Image.open('eastern_red_cedar.jpg')
+                eastern_red_image.show()
     pass
 
 
