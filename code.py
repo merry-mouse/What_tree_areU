@@ -454,7 +454,7 @@ def small():
                 strangler_tree.show()
 # if likes AUTUMN
         elif personality_choices[2] == 4:
-            # if bold
+            # if Bold
             if personality_choices[3] == 1:
                 print("Dear, {}, you could be a great Sub-Antarctic Daisy tree!".format(name))
                 print("It is a very rare tree and unfortunately there isn't a lot of info about this tree"
@@ -462,21 +462,21 @@ def small():
                         "https://en.wikipedia.org/wiki/Olearia_lyallii")
                 subant_image = Image.open('subant_daisy_tree.jpg')
                 subant_image.show()
-            # if short hair
+            # if Short hair
             elif personality_choices[3] == 2:
                 print("{}, your tree is a beautiful Olive tree!".format(name))
                 print("You can find some interesting facts about Olive trees at this webpage:\n"
                         "https://fincahermosa.com/hermosa/en/11-amazing-interesting-facts-olive-trees-know/")
                 olive_image = Image.open('olive.jpg')
                 olive_image.show()
-            # if shoulder-length hair
+            # if Shoulder-length hair
             elif personality_choices[3] == 3:
                 print("{}, your tree is a beautiful and strong Pohutukawa (New Zeland christmas) tree!".format(name))
                 print("You can find some interesting facts about Pohutukawa at this webpage:\n"
                         "https://en.wikipedia.org/wiki/Metrosideros_excelsa")
                 pohutukawa_tree = Image.open('Pohutukawa.jpg')
                 pohutukawa_tree.show()
-            # if long hair
+            # if Long hair
             elif personality_choices[3] == 4:
                 print("{}, your tree is a beautiful and strong Hazelnut tree!".format(name))
                 print("You can find some interesting facts about Hazelnut trees at this webpage:\n"
