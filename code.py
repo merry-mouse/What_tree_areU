@@ -483,6 +483,69 @@ def small():
                         "http://justfunfacts.com/interesting-facts-about-hazelnuts/")
                 hazelnut_tree = Image.open('hazelnut.jpg')
                 hazelnut_tree.show()
+# if the user is SMALL and EASYGOING
+    elif personality_choices[1] == 2:
+        # if likes WINTER
+        if personality_choices[2] == 1:
+            # if BOLD
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Windmill Palm!".format(name))
+                print("You can find some interesting facts about Windmill Palm at this webpage:\n"
+                      "https://en.wikipedia.org/wiki/Trachycarpus_fortunei")
+                windmill_palm_image = Image.open('bulgaria_windmill_palm.jpg')
+                windmill_palm_image.show()
+            # if short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful and strong Himalayan Birch!".format(name))
+                print("You can find some interesting facts about Himalayan Birch at this webpage:\n"
+                      "https://en.wikipedia.org/wiki/Betula_utilis")
+                himalayan_birch_image = Image.open('himalayan_birch.png')
+                himalayan_birch_image.show()
+            # if shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful and strong Canadian Hemlock!".format(name))
+                print("You can find some interesting facts about Canadian Hemlock at this webpage:\n"
+                      "https://www.arborday.org/trees/treeguide/TreeDetail.cfm?ItemID=849")
+                can_hemlock_tree = Image.open('canadian_hemlock.jpg')
+                can_hemlock_tree.show()
+            # if long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Norway Spruce!".format(name))
+                print("You can find some interesting facts about Norway Spruce at this webpage:\n"
+                      "https://www.gardenia.net/plant/picea-abies-inversa")
+                norway_spruce_image = Image.open('inversa_norway_spruce.jpg')
+                norway_spruce_image.show()
+        # if likes SPRING
+        elif personality_choices[2] == 2:
+            # if bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Higan Chrry tree!".format(name))
+                print("You can find some interesting facts about Higan Cherry at this webpage:\n"
+                      "https://www.gardenia.net/plant-variety/prunus-x-subhirtella-higan-cherry")
+                higan_cherry_image = Image.open('higan_cherry.jpg')
+                higan_cherry_image.show()
+            # if short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful Dogwood tree!".format(name))
+                print("You can find some interesting facts about Dogwood at this webpage:\n"
+                      "https://en.wikipedia.org/wiki/Cornus")
+                dogwood = Image.open('dogwood_tree.jpg')
+                dogwood.show()
+            # if shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful Japanese Snowball tree!".format(name))
+                print("You can find some interesting facts about Japanese Snowball at this webpage:\n"
+                      "https://www.hortmag.com/plants-we-love-2/japanese-snowball")
+                jap_snowball_tree = Image.open('japanese_snowball.png')
+                jap_snowball_tree.show()
+            # if long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful Jacaranda mimosifolia!".format(name))
+                print("You can find some interesting facts about Jacaranda mimosifolia here:\n"
+                      "https://en.wikipedia.org/wiki/Jacaranda_mimosifolia")
+                jacaranda_image = Image.open('jacaranda.jpg')
+                jacaranda_image.show()
+
 
 
 
