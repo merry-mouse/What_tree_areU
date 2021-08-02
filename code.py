@@ -452,7 +452,37 @@ def small():
                         "https://candidegardening.com/GB/stories/f0c05166-4a3e-4788-9aa9-d32b3384ca16")
                 strangler_tree = Image.open('strangler_fig.jpeg')
                 strangler_tree.show()
-
+# if likes AUTUMN
+        elif personality_choices[2] == 4:
+            # if Bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Sub-Antarctic Daisy tree!".format(name))
+                print("It is a very rare tree and unfortunately there isn't a lot of info about this tree"
+                      "But you can find some at this webpage:\n"
+                        "https://en.wikipedia.org/wiki/Olearia_lyallii")
+                subant_image = Image.open('subant_daisy_tree.jpg')
+                subant_image.show()
+            # if Short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful Olive tree!".format(name))
+                print("You can find some interesting facts about Olive trees at this webpage:\n"
+                        "https://fincahermosa.com/hermosa/en/11-amazing-interesting-facts-olive-trees-know/")
+                olive_image = Image.open('olive.jpg')
+                olive_image.show()
+            # if Shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful and strong Pohutukawa (New Zeland christmas) tree!".format(name))
+                print("You can find some interesting facts about Pohutukawa at this webpage:\n"
+                        "https://en.wikipedia.org/wiki/Metrosideros_excelsa")
+                pohutukawa_tree = Image.open('Pohutukawa.jpg')
+                pohutukawa_tree.show()
+            # if Long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Hazelnut tree!".format(name))
+                print("You can find some interesting facts about Hazelnut trees at this webpage:\n"
+                        "http://justfunfacts.com/interesting-facts-about-hazelnuts/")
+                hazelnut_tree = Image.open('hazelnut.jpg')
+                hazelnut_tree.show()
 
 
 
