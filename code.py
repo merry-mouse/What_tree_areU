@@ -422,7 +422,36 @@ def small():
                       "https://en.wikipedia.org/wiki/Podocarpaceae")
                 podocarpaceae_image = Image.open('podocarpus_mutadae.jpg')
                 podocarpaceae_image.show()
-
+        # if likes SUMMER
+        elif personality_choices[2] == 3:
+            # if bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Rubber tree!".format(name))
+                print("You can find some interesting facts about Rubber Tree at this webpage:\n"
+                        "https://www.rainforest-alliance.org/species/rubber-tree")
+                rubber_image = Image.open('rubber_tree.jpeg')
+                rubber_image.show()
+            # if short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful Ramón Nut Tree!".format(name))
+                print("You can find some interesting facts about Ramón Tree at this webpage:\n"
+                        "https://www.rainforest-alliance.org/species/ramon-tree")
+                ramon_image = Image.open('ramon_tree.jpg')
+                ramon_image.show()
+            # if shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful and strong Cecropia tree!".format(name))
+                print("You can find some interesting facts about Cecropia at this webpage:\n"
+                        "https://www.thesurvivalgardener.com/oh-useful-cecropia-tree/")
+                cecropia_tree = Image.open('cecropia.jpg')
+                cecropia_tree.show()
+            # if long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Strangler Fig!".format(name))
+                print("You can find some interesting facts about Strangler Fig at this webpage:\n"
+                        "https://candidegardening.com/GB/stories/f0c05166-4a3e-4788-9aa9-d32b3384ca16")
+                strangler_tree = Image.open('strangler_fig.jpeg')
+                strangler_tree.show()
 
 
 
