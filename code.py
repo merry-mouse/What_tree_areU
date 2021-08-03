@@ -607,8 +607,6 @@ def small():
                 golden_willow_tree.show()
 
 
-
-
 if answer.lower() == "yes":
     game_start_question1()
     question2()
