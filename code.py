@@ -540,12 +540,71 @@ def small():
                 jap_snowball_tree.show()
             # if long hair
             elif personality_choices[3] == 4:
-                print("{}, your tree is a beautiful Jacaranda mimosifolia!".format(name))
-                print("You can find some interesting facts about Jacaranda mimosifolia here:\n"
-                      "https://en.wikipedia.org/wiki/Jacaranda_mimosifolia")
-                jacaranda_image = Image.open('jacaranda.jpg')
-                jacaranda_image.show()
-
+                print("{}, your tree is a beautiful Pear!".format(name))
+                print("You can find some interesting facts about Pear Teee here:\n"
+                      "https://wikifarmer.com/pear-tree-information/")
+                pear_image = Image.open('pear.jpg')
+                pear_image.show()
+        # if likes SUMMER
+        elif personality_choices[2] == 3:
+            # if Bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Avocado tree!".format(name))
+                print("You can find some interesting facts about Avocado tree at this webpage:\n"
+                        "https://owlcation.com/stem/Avocado-Trees-and-Fruits-Botanical-and-Historical-Facts")
+                avocado_image = Image.open('avocado.jpeg')
+                avocado_image.show()
+            # if short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful Lime Tree!".format(name))
+                print("You can find some interesting facts about lime Tree at this webpage:\n"
+                        "https://www.britannica.com/plant/lime")
+                lime_image = Image.open('lime.jpg')
+                lime_image.show()
+            # if shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful Apricot tree!".format(name))
+                print("You can find some interesting facts about Apricot trees at this webpage:\n"
+                        "http://justfunfacts.com/interesting-facts-about-apricots/")
+                apricot_tree = Image.open('apricot.jpg')
+                apricot_tree.show()
+            # if long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Jacaranda Mimosifolia!".format(name))
+                print("You can find some interesting facts about Jacaranda Mimosifolia at this webpage:\n"
+                        "https://en.wikipedia.org/wiki/Jacaranda_mimosifolia")
+                jacaranda_tree = Image.open('jacaranda.jpg')
+                jacaranda_tree.show()
+        # if likes AUTUMN
+        elif personality_choices[2] == 4:
+            # if Bold
+            if personality_choices[3] == 1:
+                print("Dear, {}, you could be a great Weeping Japanese Maple Tree!".format(name))
+                print("You can find more information about Japanese maple at this webpage:\n"
+                        "https://www.monrovia.com/be-inspired/10-facts-every-japanese-maple-lover-needs-to-know.html")
+                jap_maple_image = Image.open('japanese_maple.jpg')
+                jap_maple_image.show()
+            # if Short hair
+            elif personality_choices[3] == 2:
+                print("{}, your tree is a beautiful Spindle tree!".format(name))
+                print("You can find some interesting facts about Spindle trees at this webpage:\n"
+                        "https://www.woodlandtrust.org.uk/trees-woods-and-wildlife/british-trees/a-z-of-british-trees/spindle/#:~:text=Spindle%20is%20a%20deciduous%20native,which%20have%20bright%20orange%20seeds.")
+                spindle_image = Image.open('spindle.jpg')
+                spindle_image.show()
+            # if Shoulder-length hair
+            elif personality_choices[3] == 3:
+                print("{}, your tree is a beautiful and strong Paperbark Maple tree!".format(name))
+                print("You can find some interesting facts about Paperbark at this webpage:\n"
+                        "https://www.thespruce.com/growing-the-paperbark-maple-acer-griseum-3269319")
+                paperbark_tree = Image.open('paperbark_maple.jpg')
+                paperbark_tree.show()
+            # if Long hair
+            elif personality_choices[3] == 4:
+                print("{}, your tree is a beautiful and strong Golden Curls Willow!".format(name))
+                print("You can find some interesting facts about Golden Curls Willow at this webpage:\n"
+                        "https://mikesbackyardnursery.com/2012/03/golden-curls-willow/")
+                golden_willow_tree = Image.open('golden_willow.jpg')
+                golden_willow_tree.show()
 
 
 
